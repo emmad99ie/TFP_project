@@ -13,11 +13,11 @@ pip install pandas plotly supabase
 
 ## Setup
 
-Create a `credentials.py` file in the same directory as the script:
+Create a `.env` file in the same directory as the script:
 
 ```python
-url = "https://your-project-ref.supabase.co"
-key = "your-anon-key"
+SUPABASE_URL = "https://your-project-ref.supabase.co"
+SUPABASE_KEY = "your-anon-key"
 ```
 
 Your Supabase project must have the following tables:
