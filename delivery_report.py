@@ -37,7 +37,8 @@ except ImportError:
     sys.exit("Missing dependency — run: pip install supabase")
 
 try:
-    from credentials import url, key
+    url = os.getenv("SUPABASE_URL")
+    key = os.getenv("SUPABASE_KEY")
 except ImportError:
     sys.exit(
         "credentials.py not found.\n"
