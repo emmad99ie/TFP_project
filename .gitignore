@@ -1,0 +1,7 @@
+echo ".env" > .gitignore
+echo "credentials.py" >> .gitignorecredentials.py
+credentials copy.py
+credentials.txt
+.DS_Store
+__pycache__/
+.env
