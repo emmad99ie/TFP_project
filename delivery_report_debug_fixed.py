@@ -119,8 +119,12 @@ from credentials import url, key
 
 
 ## UPDATE creds
-SUPABASE_URL = url
-SUPABASE_KEY = key 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+url = os.getenv("SUPABASE_URL")
+key = os.getenv("SUPABASE_KEY")
 
 # Supabase REST API base path. PostgREST serves all tables under /rest/v1/.
 API_BASE = f"{SUPABASE_URL}/rest/v1"

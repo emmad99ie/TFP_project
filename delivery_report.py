@@ -12,6 +12,13 @@ import sys
 import numpy as np
 from datetime import datetime
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+url = os.getenv("SUPABASE_URL")
+key = os.getenv("SUPABASE_KEY")
+
 # ── dependency checks ─────────────────────────────────────────────────────────
 try:
     import pandas as pd
